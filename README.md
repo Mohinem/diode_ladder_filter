@@ -31,13 +31,20 @@ This project demonstrates those concepts without unnecessary engineering overhea
 ### Running the script produces:
 
 Audio files
-• output_impulse.wav — impulse-train response (audible and player-safe)
 
-• output_noise.wav — filtered white noise
+• input_impulse.wav — impulse-train input (audible and player-safe)
 
-• output_saw_low.wav — saw wave at low cutoff (acid-style behavior)
+• output_impulse.wav — impulse-train output after ladder filtering
 
-• output_saw_high_res.wav — high-resonance response near instability
+• input_noise.wav — white noise input
+
+• output_noise.wav — filtered white noise output
+
+• input_saw.wav — saw wave input (raw harmonic-rich source)
+
+• output_saw_low.wav — saw wave output at low cutoff (acid-style behavior)
+
+• output_saw_high_res.wav — saw wave output at high resonance (near instability)
 
 Plots (saved under plots/)
 • impulse_response.png — time-domain response
