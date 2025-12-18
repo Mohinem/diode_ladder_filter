@@ -64,9 +64,13 @@ These limitations are intentional to keep the project focused and achievable in 
 
 ## Future extensions
 • Zero-delay feedback ladder using Newton iteration
+
 • Oversampling and proper antialiasing
+
 • Circuit-accurate diode pair modeling
+
 • Parameter automation examples (e.g., cutoff sweeps)
+
 • VST/AU implementation once DSP behavior is validated
 
 ## How to run
