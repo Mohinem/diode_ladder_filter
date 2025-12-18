@@ -262,6 +262,11 @@ def main():
     x_noise = make_white_noise(n, amp=0.18, seed=1)
     x_saw = make_saw(n, fs, freq=110.0, amp=0.25)
 
+    # NEW: write input signals for A/B comparison
+    write_wav(os.path.join(root, "input_impulse.wav"), x_imp, fs)
+    write_wav(os.path.join(root, "input_noise.wav"), x_noise, fs)
+    write_wav(os.path.join(root, "input_saw.wav"), x_saw, fs)
+
     # Filter instance
     p = LadderParams(
         fs=fs,
@@ -361,8 +366,12 @@ def main():
     plt.close()
 
     print("Done.")
-    print("Audio written:")
-    print(" - output_impulse.wav (now an impulse train, audible)")
+    print("Audio written (inputs):")
+    print(" - input_impulse.wav")
+    print(" - input_noise.wav")
+    print(" - input_saw.wav")
+    print("Audio written (outputs):")
+    print(" - output_impulse.wav (impulse train response)")
     print(" - output_noise.wav")
     print(" - output_saw_low.wav")
     print(" - output_saw_high_res.wav")
