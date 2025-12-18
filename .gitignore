@@ -205,3 +205,73 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+
+# =========================
+# Jupyter (if you add later)
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# =========================
+# Build / temp
+# =========================
+build/
+dist/
+tmp/
+temp/
+
+# =========================
+# Generated audio outputs
+# =========================
+*.wav
+*.aiff
+*.aif
+*.flac
+*.mp3
+*.ogg
+
+# =========================
+# Generated plots / figures
+# =========================
+plots/*.png
+plots/*.jpg
+plots/*.svg
+plots/*.pdf
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Large analysis dumps
+# =========================
+*.npy
+*.npz
+*.mat
