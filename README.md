@@ -18,8 +18,11 @@ This is intentionally not a circuit-accurate zero-delay feedback (ZDF) ladder. I
 Nonlinear ladder filters are a core building block of subtractive synthesis and virtual-analog modeling. Implementing even a simplified version requires understanding:
 
 • Discrete-time integrators
+
 • Nonlinear saturation in feedback loops
+
 • Stability constraints at high resonance
+
 • Practical evaluation using impulse and noise excitation
 
 This project demonstrates those concepts without unnecessary engineering overhead.
@@ -29,12 +32,16 @@ This project demonstrates those concepts without unnecessary engineering overhea
 
 Audio files
 • output_impulse.wav — impulse-train response (audible and player-safe)
+
 • output_noise.wav — filtered white noise
+
 • output_saw_low.wav — saw wave at low cutoff (acid-style behavior)
+
 • output_saw_high_res.wav — high-resonance response near instability
 
 Plots (saved under plots/)
 • impulse_response.png — time-domain response
+
 • frequency_response.png — estimated magnitude response using noise excitation
 
 All audio and plots are fully regenerable and are therefore excluded from version control.
@@ -56,8 +63,11 @@ Impulse-train excitation is used instead of a single-sample impulse to ensure au
 
 ## Limitations
 • No zero-delay feedback or implicit solving
+
 • No oversampling (aliasing may occur at high cutoff or drive)
+
 • Simplified tanh nonlinearity instead of a circuit-derived diode model
+
 • Offline processing only (not real-time or plugin-ready)
 
 These limitations are intentional to keep the project focused and achievable in a single day.
